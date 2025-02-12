@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deeproots"
+version = "0.1.0"
+description = "A Scalar Neural Network Library for building and training Neural Networks. Good for educational purposes to demonstrate simple examples and visualize individual neurons."
+authors = [{name = "Anil V", email = "pixagan@gmail.com"}]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "numpy",  # List your dependencies
+    "pandas"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/my_python_library"
+Repository = "https://github.com/yourusername/my_python_library"
