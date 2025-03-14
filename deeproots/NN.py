@@ -16,8 +16,21 @@ class NN:
         print("Initializing a Neural Network")
 
 
+    def update_weights(self, w):
+        pass
+
+
+    def export_model(self):
+        pass    
+
+    def import_model(self):
+        pass
+
+
+
+
 #A Scalar NN, layers are assembly of Neurons
-class NNScalar:
+class NNScalar(NN):
 
     def __init__(self, layers=[]):
         print("Initializing a Neural Network with n Layers")
@@ -59,6 +72,12 @@ class NNScalar:
 
 
 
+    def zero_grad(self):
+        for i in range(0, self.nLayers):
+            self.layers[i].zero_grad()
+
+
+
     def get_gradient(self):
 
         grad = np.array([])
@@ -67,6 +86,14 @@ class NNScalar:
 
         return grad
 
+
+    def get_parameters(self):
+        params = np.array([])
+        for iL in range(0, self.nLayers):
+            for iN in range(0, self.layers[iL].nNeurons):
+                wL = self.layers[iL].neurons[iN].get_weights()
+                params = np.append(params, wL)
+        return params
 
 
     def get_weights(self):

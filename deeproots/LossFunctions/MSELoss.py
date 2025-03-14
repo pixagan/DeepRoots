@@ -4,7 +4,7 @@
 #Terms of Use : MIT License | Read Terms and Conditions in the License file 
 #No warranty of any kind is provided. Use at your own risk.
 
-class MSEloss:
+class MSELoss:
 
     def __init__(self, tag=''):
         print("Initialize Loss ", tag)

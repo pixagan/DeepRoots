@@ -57,6 +57,18 @@ class LayerScalar:
         
         return self.dl_dx
 
+
+    def zero_grad(self):
+        self.dl_dx = np.zeros(self.nInputs)
+        self.dl_dw = np.zeros([self.nNeurons, self.nInputs+1])
+
+
+    def get_gradient(self):
+
+        return self.layers[iL].dl_dw.flatten()
+
+
+
     def visualize(self):
         print("Visualize Neuron")
 

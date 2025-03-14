@@ -16,5 +16,5 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/my_python_library"
-Repository = "https://github.com/yourusername/my_python_library"
+Homepage = "https://github.com/pixagan/deeproots"
+Repository = "https://github.com/pixagan/deeproots"

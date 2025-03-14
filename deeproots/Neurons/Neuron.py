@@ -53,10 +53,27 @@ class Neuron:
         self.b = np.array(w[-1])
 
 
+    def zero_grad(self):
+        self.dz_dw = None
+        self.dz_dx = None
+        
+        self.da_dw = None
+        self.da_dx = None
+        
+
+    def get_parameters(self):
+        params = np.append(self.w, self.b)
+        return params
+
+
     def get_weights(self):
         params = np.append(self.w, self.b)
 
         return params
+
+
+    def get_gradient(self):
+        return np.append(self.dl_dw, self.dl_db)
 
     
     def clear(self):
