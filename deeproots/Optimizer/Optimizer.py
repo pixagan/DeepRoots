@@ -8,6 +8,7 @@
 #An outline for an optimizer
 #Not yet functional
 
+import json
 import numpy as np
 import matplotlib.pyplot as plt
 from deeproots.Optimizer.GradientDescent import GradientDescent
@@ -17,6 +18,9 @@ class NNModel:
 
     def __init__(self):
         self.w = None
+        self.loss_history = []
+        self.w_history    = []
+
 
     def set_neural_network(self, network, lossfun):
         self.nn = nn
@@ -46,7 +50,7 @@ class Optimizer:
         self.params    = {}
         self.dvs       = None
         self.optimizer = None
-
+        self.algorithm = algorithm
         self.set_method(algorithm)
 
         self.loss_history = []
@@ -200,9 +204,11 @@ class Optimizer:
         self.w_history.append(w)
         self.loss_history.append(loss_batch)
 
+        self.dvs = w
+
 
         solution = {
-            "w": w,
+            "w_final": w,
             "dl_dw": dl_dw_batch,
             "loss": loss_batch
         }
@@ -211,8 +217,6 @@ class Optimizer:
 
 
     
-    
-
 
 
 
@@ -225,15 +229,65 @@ class Optimizer:
         #dvs
 
 
-    def export_model(self):
+
+    def export_history(self, write_frequency=10):
+        print("Exporting the optimization history")
+
+        file = open('opti_history.txt', 'w')
+
+    
+        for i in range(len(self.loss_history)):
+
+            hisi = {
+                "iter": i,
+                "loss": self.loss_history[i],
+                "w": self.w_history[i]
+            }
+
+            file.write(json.dumps(hisi))
+
+        file.close()
+
+
+
+
+    def export_solution(self):
         print("Exporting the optimizer")
+
+
+        algorithm     = self.algorithm
+        params        = self.params
+        loss_function = self.loss_function
+        w_init        = self.w_history[0]
+
+        w = self.w_history[-1]
+
+        export_dict = {
+            'algorithm': algorithm,
+            'params': params,
+            'loss_function': loss_function,
+            'w_init': w_init,
+            'w_final': w,
+            'iters': len(self.loss_history),
+            'loss_initial': self.loss_history[0],
+            'loss_final': self.loss_history[-1]
+        }
+
+        with open('optimizer_solution.json', 'w') as f:
+            json.dump(export_dict, f, indent=4)
 
 
 
     def import_model(self):
         print("Importing the optimizer")
         #loading a starting point for the optmization
-  
+
+        with open('optimizer_solution.json', 'r') as f:
+            data_dict = json.load(f)
+
+        self.algorithm     = export_dict['algorithm']
+        self.params        = export_dict['params']
+        self.loss_function = export_dict['loss_function']
 
 
 #----------------------------------------------------------------------

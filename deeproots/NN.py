@@ -5,6 +5,7 @@
 #No warranty of any kind is provided. Use at your own risk.
 
 import numpy as np
+import json
 
 from deeproots.Layers.LayerScalar import LayerScalar
 
@@ -14,17 +15,70 @@ class NN:
 
     def __init__(self):
         print("Initializing a Neural Network")
+        self.netName = ''
 
 
     def update_weights(self, w):
         pass
 
 
-    def export_model(self):
-        pass    
+    def export_model(self, filename):
 
-    def import_model(self):
-        pass
+        net_dict = {}
+        net_dict['nLayers'] = self.nLayers
+
+        for iL in range(0, self.nLayers):
+            layer_dict = {}
+            layer_dict['nNeurons'] = self.layers[iL].nNeurons
+            layer_dict['nInputs']  = self.layers[iL].nInputs
+            layer_dict['neuron']   = self.layers[iL].neuron
+
+            weights = []
+            for iN in range(0, self.layers[iL].nNeurons):
+                neuron_dict = {}
+
+                neuron_dict['w'] = self.layers[iL].neurons[iN].w.tolist()
+                neuron_dict['b'] = self.layers[iL].neurons[iN].b.tolist()
+                weights.append(neuron_dict)
+
+            layer_dict['weights'] = weights
+            net_dict['layers_'+str(iL+1)] = layer_dict
+
+
+        print(net_dict)
+
+        with open(filename, 'w') as f:
+            json.dump(net_dict, f)
+
+        print("Model exported to ", filename)
+
+        return 0
+        
+
+    def import_model(self, filename):
+
+        net_dict = json.load(open(filename, 'r'))
+
+        self.nLayers = net_dict['nLayers']
+
+        for iL in range(0, self.nLayers):
+
+            layer_dict = net_dict['layers_'+str(iL+1)]
+
+            layer_i = LayerScalar(layer_dict['nInputs'], layer_dict['nNeurons'], layer_dict['neuron'])
+            weights = []
+            for iN in range(0, layer_dict['nNeurons']):
+                neuron_dict = layer_dict['weights'][iN]
+                w = np.array(neuron_dict['w'])
+                b = np.array(neuron_dict['b'])
+                weights.extend(np.append(w, b))
+
+            layer_i.update_weights(np.array(weights))
+
+            self.layers.append(layer_i)
+            
+
+       
 
 
 
@@ -109,6 +163,22 @@ class NNScalar(NN):
         return weights
     
              
+
+    def evaluate_batch(self, mode, x_in):
+
+        batch_out = []
+
+        for i in range(0, len(x_in)):
+            x = x_in[i]
+            y = y_in[i]
+
+            a_i = self.forward(x)
+
+            batch_out.append(a_i)
+
+        return batch_out
+
+                
 
     
     def viz(self):

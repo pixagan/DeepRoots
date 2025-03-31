@@ -80,6 +80,11 @@ lossfun = SoftmaxCrossEntropy()
 x_act = x_train[0,:]
 y_act = y_train[0,:]
 
+
+
+
+
+
 # Evaluate the Network
 y_pred      = net.forward(x_act)
 loss, dL_dy = lossfun.eval(y_act, y_pred)
@@ -107,9 +112,9 @@ opti.set_variables(nVars, values=init_variables)
 opti.set_model(net, lossfun)
 
 
-epochs = 1000
-batch_size = 10
-learning_rate = 0.01
+epochs        = 10
+batch_size    = 10
+learning_rate = 0.05
 
 dataset = {
     'x': x_train,
@@ -117,4 +122,33 @@ dataset = {
 }
 
 
-opti.run(dataset, batch_size, epochs, learning_rate)
+solution = opti.run(dataset, batch_size, epochs, learning_rate)
+
+
+
+solution = opti.run(dataset, batch_size, epochs, learning_rate)
+
+opti.visualize.loss_function()
+
+
+#Run Trained model
+net.update_weights(solution['w_final'])
+
+x_test = x_train[0,:]
+
+#Run on test set
+y_pred = net.forward(x_test)
+print(y_pred)
+
+net.export_model('email_classifier_init.json')
+
+
+# #Open a new net
+# net_new = NNScalar()
+# net_new.import_model('email_classifier.json')
+# weights_new = net_new.get_weights()
+
+# print(weights_new)
+
+# y_pred = net_new.forward(x_test)
+# print(y_pred)

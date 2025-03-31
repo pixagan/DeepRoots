@@ -12,6 +12,7 @@ class LayerScalar:
 
     def __init__(self, nInputs, nNeurons, neuron='tanh'):
         print("Initializing a NN Layer with a tanh activation function")
+        self.neuron = neuron
         self.neurons  = [Neuron(nInputs) for i in range(nNeurons)]
         self.nNeurons = nNeurons
         self.nParams  = (nInputs+1) * nNeurons
