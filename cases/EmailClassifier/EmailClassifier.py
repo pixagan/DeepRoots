@@ -11,37 +11,10 @@ import json
 from deeproots.Neurons import ReLU
 from deeproots.NN import NNScalar
 from deeproots.Layers.LayerScalar import LayerScalar
-from deeproots.Optimizer.Optimizer import Optimizer
+from deeproots.Optimizers.Optimizer import Optimizer
 from deeproots.LossFunctions.SoftmaxCrossEntropy import SoftmaxCrossEntropy
-
+from deeproots.Utils.OneHotEncoding import one_hot_encoding
 from sentence_transformers import SentenceTransformer
-#Required Optimizer and Data Loaders
-#Not functional yet
-
-#one hot encoding for classification
-def one_hot_encoding(classes_in):
-    
-    encoding = np.zeros([len(classes_in), 6])
-    for iC in range(0, len(classes_in)):
-        if(classes_in[iC] == 'Spam'):
-            encoding[iC, 0] = 1
-
-        if(classes_in[iC] == 'Social Media'):
-            encoding[iC, 1] = 1
-
-        if(classes_in[iC] == 'Work'):
-            encoding[iC, 2] = 1
-        
-        if(classes_in[iC] == 'Marketing'):
-            encoding[iC, 3] = 1
-        
-        if(classes_in[iC] == 'Important'):
-            encoding[iC, 4] = 1
-        
-        if(classes_in[iC] == 'Personal'):
-            encoding[iC, 5] = 1
-
-    return encoding
 
 
 
@@ -52,12 +25,18 @@ with open('../datasets/SpamData.json', 'r') as file:
 sentences = [d['text'] for d in data]
 classes = [d['class'] for d in data]
 
+# Text to vector embedding
 st = SentenceTransformer('paraphrase-MiniLM-L6-v2')
 embeddings = st.encode(sentences)
 
 print(len(embeddings))
 x_train  = np.array(embeddings)
-y_train = one_hot_encoding(classes)
+
+
+#one hot encoding of labels
+class_list = ["Spam", "Social Media", "Work", "Marketing", "Important", "Personal"]
+y_train  = one_hot_encoding(classes, class_list)
+
 print(y_train)
 
 
@@ -83,8 +62,6 @@ y_act = y_train[0,:]
 
 
 
-
-
 # Evaluate the Network
 y_pred      = net.forward(x_act)
 loss, dL_dy = lossfun.eval(y_act, y_pred)
@@ -94,8 +71,6 @@ grad = net.get_gradient()
 
 
 #Training the Model using Gradient Descent
-
-
 weights = net.get_weights()
 print("weights ", weights)
 
@@ -113,7 +88,7 @@ opti.set_model(net, lossfun)
 
 
 epochs        = 10
-batch_size    = 10
+#batch_size    = 10
 learning_rate = 0.05
 
 dataset = {
@@ -122,13 +97,9 @@ dataset = {
 }
 
 
-solution = opti.run(dataset, batch_size, epochs, learning_rate)
+#Run the optimizer
+solution = opti.run(dataset, epochs, learning_rate)
 
-
-
-solution = opti.run(dataset, batch_size, epochs, learning_rate)
-
-opti.visualize.loss_function()
 
 
 #Run Trained model
@@ -143,12 +114,3 @@ print(y_pred)
 net.export_model('email_classifier_init.json')
 
 
-# #Open a new net
-# net_new = NNScalar()
-# net_new.import_model('email_classifier.json')
-# weights_new = net_new.get_weights()
-
-# print(weights_new)
-
-# y_pred = net_new.forward(x_test)
-# print(y_pred)

@@ -1,0 +1,315 @@
+[
+    {
+        "text":"Win a free iPhone 14 by clicking this link now!",
+        "class":"Spam"
+    },
+    {
+        "text":"Get rich quick with our guaranteed money-making scheme!",
+        "class":"Spam"
+    },
+    {
+        "text":"You have a new friend request on Facebook.",
+        "class":"Social Media"
+    },
+    {
+        "text":"Your LinkedIn connection has endorsed you for a new skill!",
+        "class":"Social Media"
+    },
+    {
+        "text":"The project deadline is Friday; please submit your updates by EOD.",
+        "class":"Work"
+    },
+    {
+        "text":"Meeting rescheduled to 3 PM; please confirm your availability.",
+        "class":"Work"
+    },
+    {
+        "text":"Exclusive offer: 50% off on all items this weekend only!",
+        "class":"Marketing"
+    },
+    {
+        "text":"Your subscription is expiring soon; renew now and save 20%!",
+        "class":"Marketing"
+    },
+    {
+        "text":"Your bank account requires verification; please review immediately.",
+        "class":"Important"
+    },
+    {
+        "text":"Flight change alert: Your departure time has been updated.",
+        "class":"Important"
+    },
+    {
+        "text":"Hi! Let’s catch up for dinner this Saturday, my place at 7?",
+        "class":"Personal"
+    },
+    {
+        "text":"Happy Birthday! Wishing you a fantastic day filled with joy.",
+        "class":"Personal"
+    },
+    {
+        "text":"You have been selected for a gift card; verify your details now!",
+        "class":"Spam"
+    },
+    {
+        "text":"Can you review the draft before our call tomorrow morning?",
+        "class":"Work"
+    },
+    {
+        "text":"Don't miss this: Your favorite brand's sale ends tonight!",
+        "class":"Marketing"
+    },
+    {
+        "text":"Your Amazon order has been shipped and is on its way.",
+        "class":"Important"
+    },
+    {
+        "text":"Check out this photo album from last week's trip!",
+        "class":"Social Media"
+    },
+    {
+        "text":"Hey, it’s been ages; let’s catch up soon!",
+        "class":"Personal"
+    },
+    {
+        "text":"Reminder: Webinar on 'Tech Trends 2024' starts in 1 hour.",
+        "class":"Work"
+    },
+    {
+        "text":"Your credit card payment was successfully processed.",
+        "class":"Important"
+    },
+    {
+        "text":"Earn $5,000 a week from the comfort of your home!",
+        "class":"Spam"
+    },
+    {
+        "text":"Congratulations! You’ve been pre-approved for a $100,000 loan—no credit check required.",
+        "class":"Spam"
+    },
+    {
+        "text":"Your Instagram post received 25 new likes—see who’s engaging!",
+        "class":"Social Media"
+    },
+    {
+        "text":"Someone mentioned you in a tweet: 'Amazing work!' Check it out now.",
+        "class":"Social Media"
+    },
+    {
+        "text":"Please find the attached report for your review before tomorrow’s meeting.",
+        "class":"Work"
+    },
+    {
+        "text":"The IT team will perform maintenance on servers from 10 PM to 12 AM.",
+        "class":"Work"
+    },
+    {
+        "text":"Hurry! Buy one get one free on all electronics—offer ends today!",
+        "class":"Marketing"
+    },
+    {
+        "text":"Your favorite store has a new collection. Shop now and enjoy exclusive deals!",
+        "class":"Marketing"
+    },
+    {
+        "text":"Your health insurance premium payment is overdue. Avoid policy lapse by paying now.",
+        "class":"Important"
+    },
+    {
+        "text":"Urgent: Your password was reset. If this wasn’t you, secure your account immediately.",
+        "class":"Important"
+    },
+    {
+        "text":"Mom’s birthday is next week. Let’s plan something special!",
+        "class":"Personal"
+    },
+    {
+        "text":"Can you send me the recipe for that amazing lasagna you made?",
+        "class":"Personal"
+    },
+    {
+        "text":"Upgrade your Netflix subscription to unlock more features now!",
+        "class":"Marketing"
+    },
+    {
+        "text":"Are you free for a quick call tomorrow to discuss our strategy?",
+        "class":"Work"
+    },
+    {
+        "text":"Alert: Your account has been accessed from a new device. Was this you?",
+        "class":"Important"
+    },
+    {
+        "text":"John just uploaded photos from last night’s party. Take a look!",
+        "class":"Social Media"
+    },
+    {
+        "text":"You’ve won a vacation package! Call now to claim your prize.",
+        "class":"Spam"
+    },
+    {
+        "text":"This weekend: Free yoga classes at your nearest wellness center!",
+        "class":"Marketing"
+    },
+    {
+        "text":"Hey, just checking in—how’s the new job going?",
+        "class":"Personal"
+    },
+    {
+        "text":"The client meeting has been moved to Thursday at 2 PM. Please update your calendar.",
+        "class":"Work"
+    },
+        {"text":"Your package has been delivered. Thank you for shopping with us!", "class":"Important"},
+        {"text":"Reminder: The webinar 'Future of AI' starts in 2 hours—don’t miss it!", "class":"Work"},
+        {"text":"Your subscription to 'Tech World Magazine' is expiring soon. Renew now!", "class":"Marketing"},
+        {"text":"Hey! Just wanted to check if you're free for lunch tomorrow.", "class":"Personal"},
+        {"text":"Your order has been processed and will ship in 3-5 business days.", "class":"Important"},
+        {"text":"You've got 3 new connection requests on LinkedIn—see who they are!", "class":"Social Media"},
+        {"text":"Don’t miss out on our exclusive Black Friday sale—up to 70% off!", "class":"Marketing"},
+        {"text":"Please review the attached document and provide your feedback by EOD.", "class":"Work"},
+        {"text":"Urgent: Your account has been temporarily locked due to suspicious activity.", "class":"Important"},
+        {"text":"Win an all-expenses-paid trip to Hawaii—enter now for free!", "class":"Spam"},
+        {"text":"Sarah commented on your photo: 'This is amazing!'", "class":"Social Media"},
+        {"text":"Happy Anniversary! Hope you and Sarah have a wonderful day.", "class":"Personal"},
+        {"text":"We’ve updated our privacy policy—please take a moment to review.", "class":"Important"},
+        {"text":"Congratulations! Your application has been accepted.", "class":"Work"},
+        {"text":"Flash Sale: 24 hours only—buy 1, get 1 free on all items!", "class":"Marketing"},
+        {"text":"Hey, it’s been a while—let’s grab coffee next week!", "class":"Personal"},
+        {"text":"Reminder: Your credit card payment is due tomorrow.", "class":"Important"},
+        {"text":"You’re invited to our exclusive members-only event next weekend.", "class":"Marketing"},
+        {"text":"Thanks for attending the meeting today. Notes are attached for your reference.", "class":"Work"},
+        {"text":"Click here to claim your $500 Amazon gift card!", "class":"Spam"},
+        {"text":"Jessica sent you a friend request on Facebook.", "class":"Social Media"},
+        {"text":"Dinner tonight at 7? Let me know!", "class":"Personal"},
+        {"text":"We noticed unusual login activity on your account. Secure it now.", "class":"Important"},
+        {"text":"Download our app today and get 15% off your first order!", "class":"Marketing"},
+        {"text":"Can you share the updated report before the meeting?", "class":"Work"},
+        {"text":"You’ve won a free trial of our premium services!", "class":"Spam"},
+        {"text":"Your flight itinerary for your trip to New York is ready.", "class":"Important"},
+        {"text":"Check out these trending posts from your connections on LinkedIn.", "class":"Social Media"},
+        {"text":"Looking forward to our family dinner this weekend!", "class":"Personal"},
+        {"text":"Reminder: Team presentation scheduled for 10 AM tomorrow.", "class":"Work"},
+        {"text":"Upgrade your membership today and enjoy exclusive perks!", "class":"Marketing"},
+        {"text":"Your monthly bank statement is now available for download.", "class":"Important"},
+        {"text":"Have you seen the photos from our last team outing? They're awesome!", "class":"Social Media"},
+        {"text":"Congratulations on your promotion! So happy for you.", "class":"Personal"},
+        {"text":"Earn points with every purchase—redeem them for exciting rewards!", "class":"Marketing"},
+        {"text":"Can we finalize the budget details in tomorrow’s meeting?", "class":"Work"},
+        {"text":"Verify your account now to avoid suspension.", "class":"Spam"},
+        {"text":"Your package is delayed due to weather conditions. We apologize for the inconvenience.", "class":"Important"},
+        {"text":"Explore new job opportunities tailored just for you.", "class":"Social Media"},
+        {"text":"Let’s plan a family trip this holiday season—any ideas?", "class":"Personal"},
+        {"text":"Join our webinar on 'Building Better Workflows' this Friday.", "class":"Work"},
+        {"text":"Flash Deal: Get an extra 20% off with this promo code—today only!", "class":"Marketing"},
+        {"text":"Secure your account now: We detected suspicious activity.", "class":"Important"},
+        {"text":"Catch up with old friends on Facebook—see what they’re up to!", "class":"Social Media"},
+        {"text":"Hey! Let me know when you're free to chat this week.", "class":"Personal"},
+        {"text":"Reminder: Performance reviews are due by the end of the month.", "class":"Work"},
+        {"text":"Don’t miss our winter sale—up to 50% off on all categories!", "class":"Marketing"},
+        {"text":"Exclusive offer: Claim your free eBook on 'Success Strategies' now!", "class":"Spam"},
+        {"text":"Your bill for the month of December has been generated.", "class":"Important"},
+        {"text":"Your LinkedIn post is gaining traction—100 views in 24 hours!", "class":"Social Media"},
+        {"text":"Let's celebrate your success! Drinks this Friday?", "class":"Personal"},
+        {"text":"Meeting agenda: Q1 Planning. Please review before tomorrow’s call.", "class":"Work"},
+        {"text":"Limited Time Offer: Upgrade to premium at 30% off!", "class":"Marketing"},
+        {"text":"Account locked: Multiple failed login attempts detected.", "class":"Important"},
+        {"text":"Reunion photos are up! Check them out on our group page.", "class":"Social Media"},
+        {"text":"Can you bring dessert for tonight’s party?", "class":"Personal"},
+        {"text":"Reminder: Finalize the presentation slides by 3 PM.", "class":"Work"},
+        {"text":"Special Holiday Discount: Enjoy 40% off on all items this week!", "class":"Marketing"},
+        {"text":"Claim your reward before it expires—click here now!", "class":"Spam"},
+        {"text":"Your appointment with Dr. Smith is confirmed for 2 PM tomorrow.", "class":"Important"},
+        {"text":"Stay updated: Follow your favorite influencers on Instagram.", "class":"Social Media"},
+        {"text":"Let’s go hiking this weekend if the weather’s good!", "class":"Personal"},
+        {"text":"Deadline extended: Submit your project by the end of the week.", "class":"Work"},
+        {"text":"Last chance to save on your favorite products—sale ends today!", "class":"Marketing"},
+        {"text":"You’re selected for an exclusive survey—get a $50 reward!", "class":"Spam"},
+        {"text":"Monthly invoice for your subscription is now available.", "class":"Important"},
+        {"text":"Reconnect with old classmates on Facebook—find out what they’re up to.", "class":"Social Media"},
+        {"text":"Thanks for hosting dinner last night—it was amazing!", "class":"Personal"},
+        {"text":"Join the team call tomorrow to discuss project updates.", "class":"Work"},
+        {"text":"Exciting deals await you—sign up today for free shipping!", "class":"Marketing"},
+        {"text":"Activate your account now to start exploring our services.", "class":"Spam"},
+        {"text":"Your payment of $150 has been successfully processed.", "class":"Important"},
+        {"text":"Check out this trending video shared by your friend.", "class":"Social Media"},
+        {"text":"Let’s catch a movie this weekend—your pick!", "class":"Personal"},
+        {"text":"The office will be closed on Friday for maintenance.", "class":"Work"},
+        {"text":"Exclusive early access to our New Year collection—shop now!", "class":"Marketing"},
+        {"text":"Congratulations! You’re the lucky winner of our sweepstakes.", "class":"Spam"},
+        {"text":"Please complete the security check to reactivate your account.", "class":"Important"},
+        {"text":"Someone tagged you in their post—click to see what they said!", "class":"Social Media"},
+        {"text":"Thanks for the lovely gift—it made my day!", "class":"Personal"},
+        {"text":"Can you update the team about the new client requirements?", "class":"Work"},
+        {"text":"Free trial: Get 1 month of premium features at no cost!", "class":"Marketing"},
+        {"text":"We noticed some unusual activity in your account. Please verify.", "class":"Spam"},
+        {"text":"Your application for the scholarship has been received.", "class":"Important"},
+        {"text":"Revisit your favorite photos on Instagram—create a new story!", "class":"Social Media"},
+        {"text":"Don't forget the family reunion next Sunday—mark your calendar!", "class":"Personal"},
+        {"text":"Project meeting has been rescheduled to 11 AM tomorrow.", "class":"Work"},
+        {"text":"Get exclusive early bird discounts for the holiday season!", "class":"Marketing"},
+        {"text":"You’re pre-approved for a credit card with amazing benefits!", "class":"Spam"},
+        {"text":"Your medical test results are now available online.", "class":"Important"},
+        {"text":"Update your LinkedIn profile to attract more opportunities!", "class":"Social Media"},
+        {"text":"Looking forward to seeing you at the wedding next month.", "class":"Personal"},
+        {"text":"Please confirm your attendance for tomorrow’s conference.", "class":"Work"},
+        {"text":"Shop now and save big—20% off on your favorite brands!", "class":"Marketing"},
+        {"text":"You’ve won a $100 gift card! Redeem it before it’s too late.", "class":"Spam"},
+        {"text":"Flight reminder: Check-in opens 24 hours before departure.", "class":"Important"},
+        {"text":"Your Facebook memories from 5 years ago are waiting—relive them!", "class":"Social Media"},
+        {"text":"Just sent you the book we talked about—let me know your thoughts.", "class":"Personal"},
+        {"text":"Don't miss the training session on 'Agile Best Practices' tomorrow.", "class":"Work"},
+        {"text":"Biggest sale of the year: Up to 80% off everything—shop now!", "class":"Marketing"},
+            {"text":"Your annual subscription to 'Premium Fitness Club' will renew automatically on January 15th. If you wish to make changes, visit your account settings.", "class":"Important"},
+            {"text":"The client has requested additional changes to the project scope. Please review the attached email chain and prepare a response for tomorrow’s meeting.", "class":"Work"},
+            {"text":"Shop smart this season: Combine discounts with our loyalty rewards program for even bigger savings!", "class":"Marketing"},
+            {"text":"I was thinking about our last conversation—it really inspired me! Let’s connect and brainstorm soon.", "class":"Personal"},
+            {"text":"Your password was reset at 3:45 PM today. If this wasn’t you, please contact our support team immediately.", "class":"Important"},
+            {"text":"Your photo has been featured in a popular Facebook group with 1,000+ members. Check it out!", "class":"Social Media"},
+            {"text":"You’ve been selected to join our exclusive pilot program! Enroll today for a chance to win a $500 gift card.", "class":"Spam"},
+            {"text":"Reminder: The workshop on 'Data Visualization Best Practices' is scheduled for this Thursday at 2 PM. RSVP here.", "class":"Work"},
+            {"text":"We’re thrilled to announce a limited-time partnership with your favorite brand—click to explore exciting offers.", "class":"Marketing"},
+            {"text":"Can you confirm if you’ll be joining us for game night this weekend? Bring snacks if possible!", "class":"Personal"},
+            {"text":"Urgent: Your flight to Los Angeles on December 20th has been rescheduled. View the updated itinerary in your account.", "class":"Important"},
+            {"text":"A new connection has endorsed your skills on LinkedIn! Keep building your professional network.", "class":"Social Media"},
+            {"text":"Congratulations! You’re eligible for an exclusive free trial of our most popular software package. Sign up today.", "class":"Spam"},
+            {"text":"Please find the updated version of the marketing strategy document attached. Let me know if you have feedback.", "class":"Work"},
+            {"text":"Holiday alert: Buy a gift card worth $100 and receive a bonus $20 gift card for free. Offer valid until December 31st.", "class":"Marketing"},
+            {"text":"It’s been so long since we caught up! How about coffee on Wednesday? Let me know what time works for you.", "class":"Personal"},
+            {"text":"Security Alert: A login attempt was made on your account from a new device in Chicago. Was this you?", "class":"Important"},
+            {"text":"Your Instagram reel just hit 1,000 views! See who’s been watching and engaging with your content.", "class":"Social Media"},
+            {"text":"Win the trip of a lifetime: Fill out this survey and get entered into our exclusive travel giveaway.", "class":"Spam"},
+            {"text":"Team update: The quarterly performance review process has been streamlined. Check out the new guidelines here.", "class":"Work"},
+            {"text":"Exclusive early access: Shop our winter collection before it’s available to the public!", "class":"Marketing"},
+            {"text":"Could you share your thoughts on the presentation? I’d like to improve it before sending it to the client.", "class":"Personal"},
+            {"text":"Payment failed: Your subscription renewal for 'Premium Music' couldn’t be processed. Update your payment method now.", "class":"Important"},
+            {"text":"Your LinkedIn connections have been very active recently—catch up on what’s happening in your network.", "class":"Social Media"},
+            {"text":"Get 3 months of premium service absolutely free—no strings attached! Act now.", "class":"Spam"},
+            {"text":"The technical team has raised concerns about the feasibility of the new product timeline. Let’s discuss during today’s call.", "class":"Work"},
+            {"text":"Join our rewards program today and earn points every time you shop. Redeem them for exclusive perks.", "class":"Marketing"},
+            {"text":"Just a heads-up: I’ll be in your city next week. Would love to meet up if you’re free.", "class":"Personal"},
+            {"text":"Service disruption: We’re experiencing a temporary outage in your area. We’re working to resolve it as quickly as possible.", "class":"Important"},
+            {"text":"Your Facebook group 'Photography Enthusiasts' has reached 10,000 members! Celebrate this milestone with your followers.", "class":"Social Media"},
+            {"text":"Claim your $100 gift card by completing the survey linked below. This offer won’t last long!", "class":"Spam"},
+            {"text":"I’ve attached a draft of the project roadmap. Let me know your thoughts so we can finalize it before the deadline.", "class":"Work"},
+            {"text":"Limited-time offer: Pre-order the latest gadgets and enjoy exclusive early-bird discounts.", "class":"Marketing"},
+            {"text":"I found an article that reminded me of our last conversation. Sending it your way—let me know what you think!", "class":"Personal"},
+            {"text":"Your package is out for delivery! Track it in real-time using this link.", "class":"Important"},
+            {"text":"Someone you know just joined Instagram—follow them to stay connected!", "class":"Social Media"},
+            {"text":"You’re just one step away from claiming your free subscription to 'Elite News Digest.' Click here to confirm.", "class":"Spam"},
+            {"text":"Reminder: The design team is expecting feedback on the new mockups by EOD today. Please prioritize this task.", "class":"Work"},
+            {"text":"Shop smarter this holiday season: Combine your rewards with our latest discount codes for maximum savings.", "class":"Marketing"},
+            {"text":"Thanks for the book recommendation! I’ve already started reading it—such a great choice.", "class":"Personal"},
+            {"text":"Important update: Your utility bill payment is overdue. Pay now to avoid service interruptions.", "class":"Important"},
+            {"text":"Your LinkedIn article 'Top 10 Marketing Tips' has been featured in a popular newsletter! See the engagement stats here.", "class":"Social Media"},
+            {"text":"Earn double rewards points this weekend only! Don’t miss out on this exclusive opportunity.", "class":"Spam"},
+            {"text":"Please review the updated compliance policies and share them with your team before the next meeting.", "class":"Work"},
+            {"text":"Enjoy a special 25% discount when you shop using our app this week only. Don’t miss out!", "class":"Marketing"},
+            {"text":"Hey! Let’s plan a trip to the mountains this winter. I know a great spot we could visit.", "class":"Personal"},
+            {"text":"Your reservation for 'City Hotel' has been confirmed. Details of your stay are attached.", "class":"Important"},
+            {"text":"Reconnect with an old friend: Jason just updated his profile on Facebook—say hi!", "class":"Social Media"},
+            {"text":"Special invitation: Join our elite rewards program and unlock exclusive deals and benefits today.", "class":"Spam"},
+            {"text":"Project Update: We’re ahead of schedule for the first milestone. Great work, everyone!", "class":"Work"},
+            {"text":"Buy now, pay later: Introducing flexible payment options for all purchases above $200.", "class":"Marketing"},
+            {"text":"I just saw your old travel photos—such great memories! Let’s plan another adventure soon.", "class":"Personal"}    
+    
+]

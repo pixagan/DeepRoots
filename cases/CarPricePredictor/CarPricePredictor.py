@@ -11,7 +11,7 @@ import numpy as np
 from deeproots.Dataloaders.CSVLoader import CSVLoader
 from deeproots.Neurons.Neuron import Neuron
 #from deeproots.Optimizer import GradientDescent as GD
-from deeproots.Optimizer.Optimizer import Optimizer
+from deeproots.Optimizers.Optimizer import Optimizer
 from deeproots.LossFunctions.MSELoss import MSELoss
 
 

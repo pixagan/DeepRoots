@@ -11,7 +11,7 @@
 import json
 import numpy as np
 import matplotlib.pyplot as plt
-from deeproots.Optimizer.GradientDescent import GradientDescent
+from deeproots.Optimizers.GradientDescent import GradientDescent
 
 
 class NNModel:
@@ -118,7 +118,7 @@ class Optimizer:
 
 
 
-    def run(self, dataset, batch_size, epochs=100, learning_rate=0.001):
+    def run(self, dataset, epochs=100, learning_rate=0.001, batch_size=10):
 
         w     = self.dvs
         nVars = len(w)
@@ -295,7 +295,7 @@ class Optimizer:
 
 def main():
 
-    opti = Optimizer()
+    opti = Optimizers()
 
     opti.set_method('gradient_descent')
 
