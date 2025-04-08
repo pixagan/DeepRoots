@@ -1,3 +1,5 @@
 .env
 deeproots.egg-info
 datasets
+.DS_Store
+*.pyc
