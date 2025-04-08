@@ -14,7 +14,7 @@ class Softmax:
         self.x = None
         self.a = None
     
-    def forward(self,z):
+    def forward(self,x):
     
         num = np.exp(x)
         den = np.sum(num)

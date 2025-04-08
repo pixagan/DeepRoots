@@ -6,10 +6,10 @@
 
 import numpy as np
 
-from deeproots.Neurons.ReLU import ReLU
-from deeproots.Neurons.Sigmoid import Sigmoid
-from deeproots.Neurons.Tanh import Tanh
-from deeproots.Neurons.Softmax import Softmax
+from deeproots.Functional.ReLU import ReLU
+from deeproots.Functional.Sigmoid import Sigmoid
+from deeproots.Functional.Tanh import Tanh
+from deeproots.Functional.Softmax import Softmax
 
 class Neuron:
 
