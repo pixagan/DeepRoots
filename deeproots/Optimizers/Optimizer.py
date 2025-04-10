@@ -13,36 +13,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from deeproots.Optimizers.GradientDescent import GradientDescent
 
-
-class NNModel:
-
-    def __init__(self):
-        self.w = None
-        self.loss_history = []
-        self.w_history    = []
-
-
-    def set_neural_network(self, network, lossfun):
-        self.nn = nn
-        self.lossfun = lossfun
-
-
-    def evaluate(self, w):
-
-        self.nn.set_weights(w)
-        self.nn.evaluate(w)
-
-    def sens(self, w):
-        
-        self.nn.set_weights(w)
-        yhat        = self.nn.forward(self.dvs)
-        loss, dloss = self.lossfun.eval(self.model.y, self.model.y_pred)
-        dl_dw       += self.model.backward(dloss)
-
-
-
-
-
 class Optimizer:
 
     def __init__(self, algorithm='gradient_descent', parameters={}):
